@@ -1,21 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alil Rahman Alidou | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alil Alidou | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f2f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1a73e8;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    nav {
+      background: #0f5ae0;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1a73e8;
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 0.5rem;
+    }
+
+    .project {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid #1a73e8;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Ciao! Sono Alil Rahman Alidou</h1>
-  <p>Junior Developer con diploma in informatica.</p>
+  <header>
+    <h1>Alil Alidou</h1>
+    <p>Junior Developer con diploma in informatica</p>
+  </header>
 
-  <h2>Progetti</h2>
-  <ul>
-    <li><a href="https://github.com/Rahman05-cyber/NomeProgetto1">Nome Progetto 1</a> – Breve descrizione</li>
-    <li><a href="https://github.com/Rahman05-cyber/NomeProgetto2">Nome Progetto 2</a> – Breve descrizione</li>
-  </ul>
+  <nav>
+    <a href="#chi-sono">Chi sono</a>
+    <a href="#progetti">Progetti</a>
+    <a href="#contatti">Contatti</a>
+  </nav>
 
-  <h2>Contatti</h2>
-  <p>Email: g2350289@gmail.com</p>
+  <section id="chi-sono">
+    <h2>Chi sono</h2>
+    <p>Sono un giovane sviluppatore con una forte passione per la programmazione e le tecnologie web. Ho ottenuto il diploma in informatica e continuo a crescere imparando nuovi strumenti ogni giorno.</p>
+  </section>
+
+  <section id="progetti">
+    <h2>Progetti</h2>
+    <div class="project">
+      <h3>Gestione Trasporti</h3>
+      <p>App Laravel per la gestione delle aziende di trasporto. Include funzioni CRUD, dashboard e ruoli utente.</p>
+      <a href="https://github.com/Rahman05-cyber/gestione-trasporti" target="_blank">Vedi su GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Portfolio Web</h3>
+      <p>Il sito che stai guardando! Creato con HTML e CSS, pubblicato su GitHub Pages.</p>
+      <a href="https://rahman05-cyber.github.io" target="_blank">Visita il sito</a>
+    </div>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <p>Email: g2350289@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Rahman05-cyber" target="_blank">Rahman05-cyber</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Alil Alidou. Tutti i diritti riservati.</p>
+  </footer>
 </body>
 </html>
